@@ -1,0 +1,1184 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/***********************Header Styles***********************/
+.header-div-container {
+  width: 100%;
+  height: 5.8em;
+  line-height: 5.8em;
+  position: fixed;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  top: 0;
+  border-bottom: 0.5px solid #dfdfdf;
+}
+.app-logo {
+  max-width: auto;
+  max-height: auto;
+  vertical-align: middle;
+}
+/***********************************************************/
+
+/*************************Blog List Container Styles**********************/
+.blog-parent-container {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  margin-top: 8em;
+}
+.blog-left-container {
+  padding: 1em;
+}
+.blog-middle-container {
+  padding: 1em;
+}
+.blog-right-container {
+  padding: 1em;
+}
+.blog-post-container {
+  width: 100%;
+}
+.blog-post-date-author-keyword-container {
+  display: grid;
+  grid-template-columns: 15% 12% 18%;
+}
+.blog-post-author-container {
+  line-height: 30px;
+}
+.blog-post-date-container {
+  line-height: 30px;
+}
+.blog-post-keyword-container {
+  line-height: 30px;
+}
+.keyword-container {
+  height: 30px;
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+.blog-post-thumb {
+  width: 100%;
+  height: 100%;
+}
+.blog-post-thumb-zoom {
+  height: 100%;
+  overflow: hidden;
+}
+
+.blog-post-thumb-zoom img {
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+}
+.blog-post-thumb-zoom:hover img {
+  transform: scale(1.1);
+}
+.blog-pagination-container {
+  width: 100%;
+  height: 5em;
+  line-height: 5em;
+  padding: 1em;
+  display: flex;
+}
+.blog-pagination-previous-container {
+  width: 50%;
+  height: 5em;
+  line-height: 5em;
+  display: flex;
+  justify-content: flex-start;
+}
+.blog-pagination-next-container {
+  width: 50%;
+  height: 5em;
+  line-height: 5em;
+  display: flex;
+  justify-content: flex-end;
+}
+.blog-pagination-button {
+  width: 6em;
+  height: 3em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #fff9f9;
+  background: #1b1b1b;
+  border-radius: 0.1em;
+}
+.blog-pagination-button:hover {
+  width: 6em;
+  height: 3em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #fff9f9;
+  background: #2e2e2e;
+  border-radius: 0.1em;
+}
+/*************************************************************************/
+
+/**********************Blog Header Styles**************************/
+.blog-header-container {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
+.blog-header-no-link-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0.2px 0.2px #5e5d5d;
+  color: #3b3a3a;
+}
+.blog-header-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0.2px 0.2px #5e5d5d;
+  color: #3b3a3a;
+}
+.blog-header-title:hover {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fc4c00;
+  cursor: pointer;
+}
+.blog-header-short-description-container {
+  width: 100%;
+  height: auto;
+}
+.blog-header-short-description {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.01rem;
+  font-weight: 100;
+  line-height: 1.7em;
+  color: #6b6a6a;
+}
+.blog-header-child-section {
+  width: 100%;
+  height: 2.5em;
+  line-height: 2.5em;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.blog-header-author {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4b4b4b;
+  vertical-align: middle;
+}
+.blog-header-author:hover {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fc4c00;
+  vertical-align: middle;
+}
+.blog-header-date {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4b4b4b;
+  vertical-align: middle;
+}
+.blog-header-keyword-container {
+  margin-top: 2em;
+}
+.blog-header-keyword {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #4b4b4b;
+  padding: 0.5em;
+  border: 0.1em solid #bdbaba;
+}
+.blog-header-share-icon-container {
+  display: flex;
+  height: 2em;
+}
+.blog-header-icon-container {
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-header-icon-container:hover {
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+}
+.blog-header-share-icon {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+}
+.blog-header-thumb-container {
+  width: 100%;
+  height: 100%;
+}
+.blog-header-thumb {
+  width: 100%;
+  height: 100%;
+}
+.blog-header-divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 2.5em;
+  background: #d8d8d8;
+}
+/****************************************************************/
+
+/**********************Blog Error Page Styles**********************/
+.blog-error-page-container {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
+.blog-404-container {
+  width: 100%;
+  height: 3.5em;
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-404-label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  color: #3b3a3a;
+}
+.blog-oops-container {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-oops-label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #3b3a3a;
+}
+/******************************************************************/
+
+/**************************Blog Footer Styles*****************************/
+.blog-footer-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.blog-footer-author-container {
+  width: 15em;
+  height: auto;
+  padding: 0.5em;
+}
+.blog-footer-author-pic {
+  border-radius: 10em;
+}
+.blog-footer-name-twitter-container {
+  padding: 0.5em;
+}
+.blog-footer-name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3b3a3a;
+}
+.blog-footer-bio {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5em;
+  color: #6b6a6a;
+}
+.blog-footer-twitter {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.05rem;
+  color: #fc4c00;
+}
+/*************************************************************************/
+
+/*************************Search Container Styles**********************/
+.blog-search-container {
+  width: 19em;
+  padding: 1em;
+}
+.search-container {
+  width: 19em;
+  height: 3.2em;
+  display: grid;
+  grid-template-columns: 80% 10%;
+  border: 1px solid #dfdfdf;
+}
+.search-input-div {
+  width: 16em;
+  line-height: 3em;
+}
+.search-input {
+  width: 95%;
+  text-indent: 1em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.95rem;
+  color: #807f7f;
+  border: none;
+  outline: none;
+}
+.search-btn-div {
+  width: 3.8em;
+  height: auto;
+  display: flex;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+.search-icon {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+}
+.search-results-center-div {
+  padding: 1em;
+}
+.search-results-label-span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+/**********************************************************************/
+
+/*************************About Container Styles**********************/
+.blog-about-container {
+  width: 19em;
+  line-height: 3.2em;
+  padding: 1em;
+}
+.about-container {
+  width: 19em;
+  height: 10em;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.about-me-container {
+  width: 100%;
+  height: 3em;
+  line-height: 3em;
+  border-bottom: 0.5px solid #fc4c00;
+}
+.about-label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3b3a3a;
+}
+.about-profile-container {
+  width: 100%;
+  height: 5em;
+  display: grid;
+  grid-template-columns: 28% 70%;
+}
+.about-profile-pic-container {
+  width: 7em;
+  height: auto;
+}
+.about-profile-pic {
+  width: 5em;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 10em;
+}
+.about-profile-details-container {
+  width: 14em;
+  height: auto;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.about-profile-name-div {
+  height: 2.5em;
+  line-height: 2.5em;
+}
+.about-profile-name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3b3a3a;
+  margin-left: 0.5em;
+}
+.about-social-profile-div {
+  display: flex;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+.about-social-media-icon-div {
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  margin-left: 0.2em;
+}
+.about-social-media-icon-size {
+  width: 2em;
+  height: 2em;
+}
+/*********************************************************************/
+
+/*************************Social Media Container Styles**********************/
+.blog-social-media-container {
+  width: 19em;
+  height: auto;
+  padding: 1em;
+}
+.social-media-container {
+  width: 19em;
+  height: auto;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.social-media-label-container {
+  width: 100%;
+  height: 3em;
+  line-height: 3em;
+  border-bottom: 0.5px solid #fc4c00;
+}
+.social-media-label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3b3a3a;
+}
+.social-media-fb-container {
+  width: 19em;
+  height: auto;
+  margin-top: 2em;
+}
+.social-media-iframe {
+  overflow: hidden;
+}
+/****************************************************************************/
+
+/*************************About Page Container Styles**********************/
+.about-page-parent-container {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  margin-top: 8em;
+}
+.about-page-left-container {
+  padding: 1em;
+}
+.about-page-middle-container {
+  padding: 1em;
+}
+.about-page-right-container {
+  padding: 1em;
+}
+.about-author-pic-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-author-pic {
+  width: 6em;
+  height: auto;
+  border-radius: 10em;
+}
+.about-author-name-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-author-name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #3b3a3a;
+}
+.about-message-container {
+  margin-top: 2em;
+}
+.about-message-label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #6b6a6a;
+}
+.about-message-link {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  color: #fc4c00;
+  text-decoration: none;
+}
+.about-message-link:hover {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  color: #fc4c00;
+  text-decoration: underline;
+}
+.about-social-media-container {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-social-media-icon-container {
+  width: 15em;
+  height: 3em;
+  display: flex;
+}
+.social-media-share-icon-large-size {
+  width: 2em;
+  height: 2em;
+  margin: 0.5em;
+}
+/****************************************************************************/
+
+/*********************************Footer Styles******************************/
+.footer-container {
+  width: 100%;
+  height: 10em;
+  background: #000000;
+}
+.footer-social-media-container {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social-media-icon-container {
+  width: 40%;
+  height: 5em;
+  line-height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1px solid #2c2c2c;
+}
+.footer-social-media-icon-size {
+  width: 2.5em;
+  height: auto;
+  margin: 0.5em;
+  vertical-align: middle;
+}
+.footer-copyright-container {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-copyright-label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.95rem;
+  text-shadow: 0.2px 0.2px #5e5d5d;
+  color: #555353;
+}
+/************************************************************************/
+
+@media only screen and (max-width: 1000px) {
+  /***********************Header Styles***********************/
+  .header-div-container {
+    width: 100%;
+    height: 5.8em;
+    line-height: 5.8em;
+    position: fixed;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 100%;
+    top: 0;
+    border-bottom: 0.5px solid #dfdfdf;
+  }
+  .app-logo {
+    max-width: auto;
+    max-height: auto;
+    vertical-align: middle;
+  }
+  /***********************************************************/
+
+  /*************************Blog List Container Styles**********************/
+  .blog-parent-container {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 5em;
+  }
+  .blog-left-container {
+    padding: 1em;
+  }
+  .blog-middle-container {
+    padding: 1em;
+  }
+  .blog-right-container {
+    padding: 1em;
+  }
+  .blog-post-container {
+  }
+  .blog-post-date-author-keyword-container {
+    display: grid;
+    grid-template-columns: 25% 20% 20%;
+  }
+  .blog-post-author-container {
+    line-height: 50px;
+  }
+  .blog-post-date-container {
+    line-height: 50px;
+  }
+  .blog-post-keyword-container {
+    line-height: 50px;
+  }
+  .keyword-container {
+    height: 50px;
+    border-radius: 5px;
+    background: #f2f2f2;
+  }
+  .blog-post-thumb {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-post-thumb-zoom {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .blog-post-thumb-zoom img {
+    transition: transform 0.5s, filter 1.5s ease-in-out;
+  }
+  .blog-post-thumb-zoom:hover img {
+    transform: scale(1.1);
+  }
+  .blog-pagination-container {
+    width: 100%;
+    height: 5em;
+    line-height: 5em;
+    padding: 1;
+    display: flex;
+  }
+  .blog-pagination-previous-container {
+    width: 50%;
+    height: 5em;
+    line-height: 5em;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .blog-pagination-next-container {
+    width: 50%;
+    height: 5em;
+    line-height: 5em;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .blog-pagination-button {
+    width: 6em;
+    height: 3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: #fff9f9;
+    background: #1b1b1b;
+    border-radius: 0.1em;
+  }
+  .blog-pagination-button:hover {
+    width: 6em;
+    height: 3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: #fff9f9;
+    background: #2e2e2e;
+    border-radius: 0.1em;
+  }
+  /*************************************************************************/
+
+  /**********************Blog Error Page Styles**********************/
+  .blog-error-page-container {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+  .blog-404-container {
+    width: 100%;
+    height: 3.5em;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-404-label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+    color: #3b3a3a;
+  }
+  .blog-oops-container {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-oops-label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #3b3a3a;
+  }
+  /******************************************************************/
+
+  /**********************Blog Header Styles**************************/
+  .blog-header-container {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+  .blog-header-no-link-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0.2px 0.2px #5e5d5d;
+    color: #3b3a3a;
+  }
+  .blog-header-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0.2px 0.2px #5e5d5d;
+    color: #3b3a3a;
+  }
+  .blog-header-title:hover {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fc4c00;
+    cursor: pointer;
+  }
+  .blog-header-short-description-container {
+    width: 100%;
+    height: auto;
+  }
+  .blog-header-short-description {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.01rem;
+    font-weight: 100;
+    line-height: 1.7em;
+    color: #6b6a6a;
+  }
+  .blog-header-child-section {
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    display: grid;
+    grid-template-columns: 70% 32%;
+  }
+  .blog-header-author-date {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4b4b4b;
+  }
+  .blog-header-keyword-container {
+    margin-top: 2em;
+  }
+  .blog-header-keyword {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #4b4b4b;
+    padding: 0.5em;
+    border: 0.1em solid #bdbaba;
+  }
+  .blog-header-share-icon-container {
+    display: flex;
+    height: 2em;
+  }
+  .blog-header-icon-container {
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-header-icon-container:hover {
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+  }
+  .blog-header-share-icon {
+    width: 1.1em;
+    height: 1.1em;
+    vertical-align: middle;
+  }
+  .blog-header-thumb-container {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-header-thumb {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-header-divider {
+    width: 100%;
+    height: 1px;
+    margin-top: 2.5em;
+    background: #d8d8d8;
+  }
+  /****************************************************************/
+
+  /**************************Blog Footer Styles*****************************/
+  .blog-footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .blog-footer-author-container {
+    width: 15em;
+    height: auto;
+    padding: 0.5em;
+  }
+  .blog-footer-author-pic {
+    border-radius: 10em;
+  }
+  .blog-footer-name-twitter-container {
+    padding: 0.5em;
+  }
+  .blog-footer-name {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #3b3a3a;
+  }
+  .blog-footer-bio {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    color: #6b6a6a;
+  }
+  .blog-footer-twitter {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.9rem;
+    color: #fc4c00;
+  }
+  /*************************************************************************/
+
+  /*************************Search Container Styles**********************/
+  .blog-search-container {
+    width: 100%;
+    line-height: 3.2em;
+  }
+  .search-container {
+    width: 19em;
+    height: 3.2em;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 80% 10%;
+    border: 1px solid #dfdfdf;
+  }
+  .search-input-div {
+    width: 16em;
+    line-height: 3em;
+  }
+  .search-input {
+    width: 95%;
+    text-indent: 1em;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.95rem;
+    color: #807f7f;
+    border: none;
+    outline: none;
+  }
+  .search-btn-div {
+    width: 3.8em;
+    height: auto;
+    display: flex;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+  }
+  .search-icon {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+  }
+  .search-results-center-div {
+    padding: 1em;
+  }
+  .search-results-label-span {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+  }
+  /**********************************************************************/
+
+  /*************************About Container Styles**********************/
+  .blog-about-container {
+    width: 100%;
+    line-height: 3.2em;
+    padding: 1em;
+    margin: 0 auto;
+  }
+  .about-container {
+    width: 19em;
+    height: 10em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .about-me-container {
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    border-bottom: 0.5px solid #fc4c00;
+  }
+  .about-label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #3b3a3a;
+  }
+  .about-profile-container {
+    width: 100%;
+    height: 5em;
+    display: grid;
+    grid-template-columns: 28% 70%;
+  }
+  .about-profile-pic-container {
+    width: 7em;
+    height: auto;
+  }
+  .about-profile-pic {
+    width: 4.5em;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 10em;
+  }
+  .about-profile-details-container {
+    width: 14em;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .about-profile-name-div {
+    height: 2.5em;
+    line-height: 2.5em;
+  }
+  .about-profile-name {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3b3a3a;
+    margin-left: 0.5em;
+  }
+  .about-social-profile-div {
+    display: flex;
+    height: 2.5em;
+    line-height: 2.5em;
+  }
+  .about-social-media-icon-div {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin-left: 0.2em;
+  }
+  .about-social-media-icon-size {
+    width: 2em;
+    height: 2em;
+  }
+  /*********************************************************************/
+
+  /*************************Social Media Container Styles**********************/
+  .blog-social-media-container {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    margin: 0 auto;
+  }
+  .social-media-container {
+    width: 19em;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .social-media-label-container {
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    border-bottom: 0.5px solid #fc4c00;
+  }
+  .social-media-label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #3b3a3a;
+  }
+  .social-media-fb-container {
+    width: 19em;
+    height: auto;
+    margin-top: 2em;
+  }
+  .social-media-iframe {
+    overflow: hidden;
+  }
+  /****************************************************************************/
+
+  /*************************About Page Container Styles**********************/
+  .about-page-parent-container {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 5em;
+  }
+  .about-page-left-container {
+    padding: 1em;
+  }
+  .about-page-middle-container {
+    padding: 1em;
+  }
+  .about-page-right-container {
+    padding: 1em;
+  }
+  .about-author-pic-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-author-pic {
+    width: 6em;
+    height: auto;
+    border-radius: 10em;
+  }
+  .about-author-name-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-author-name {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #3b3a3a;
+  }
+  .about-message-container {
+    margin-top: 2em;
+  }
+  .about-message-label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #6b6a6a;
+  }
+  .about-message-link {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    color: #fc4c00;
+    text-decoration: none;
+  }
+
+  .about-message-link:hover {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    color: #fc4c00;
+    text-decoration: underline;
+  }
+  .about-social-media-container {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-social-media-icon-container {
+    width: 15em;
+    height: 3em;
+    display: flex;
+  }
+  .social-media-share-icon-large-size {
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+  }
+  /****************************************************************************/
+
+  /*********************************Footer Styles******************************/
+  .footer-container {
+    width: 100%;
+    height: 10em;
+    background: #000000;
+  }
+  .footer-social-media-container {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-social-media-icon-container {
+    width: 80%;
+    height: 5em;
+    line-height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1px solid #2c2c2c;
+  }
+  .footer-social-media-icon-size {
+    width: 2.5em;
+    height: auto;
+    margin: 0.5em;
+    vertical-align: middle;
+  }
+  .footer-copyright-container {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-copyright-label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.95rem;
+    text-shadow: 0.2px 0.2px #5e5d5d;
+    color: #555353;
+  }
+  /************************************************************************/
+}
