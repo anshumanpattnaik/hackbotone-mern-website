@@ -28,5 +28,5 @@ If you face any problem or have any suggestion on improving the code then feel f
 https://youtu.be/jUiYl1Bqe7s
 </p>
 
-### License & copyright
+### License
 This project is licensed under the [MIT License](LICENSE)
