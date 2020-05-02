@@ -27,3 +27,6 @@ If you face any problem or have any suggestion on improving the code then feel f
 <p>
 https://youtu.be/jUiYl1Bqe7s
 </p>
+
+### License & copyright
+This project is licensed under the [MIT License](LICENSE)
