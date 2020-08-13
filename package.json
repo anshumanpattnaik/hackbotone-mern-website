@@ -28,7 +28,7 @@
     "react-helmet": "^5.2.1",
     "react-html-markup": "^1.0.6",
     "react-router-dom": "^5.1.2",
-    "serialize-javascript": "^2.1.2"
+    "serialize-javascript": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
